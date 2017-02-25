@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="AnimatedGradientBrush.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid x:Name="LogoGrid">
+        <Grid.Resources>
+            <Storyboard x:Name="LoadingStoryBoard">
+                <ColorAnimationUsingKeyFrames
+                Storyboard.TargetName="LogoGrid"
+                Storyboard.TargetProperty="(UIElement.Background).(LinearGradientBrush.GradientStops)[1].(GradientStop.Color)"
+                RepeatBehavior="Forever"
+                EnableDependentAnimation="True">
+                    <LinearColorKeyFrame Value="#40000000" KeyTime="0:0:1" />
+                    <LinearColorKeyFrame Value="#A0FFFFFF" KeyTime="0:0:2" />
+                </ColorAnimationUsingKeyFrames>
+            </Storyboard>
+        </Grid.Resources>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                <GradientStop Color="Transparent" Offset="0" />
+                <GradientStop Color="#80FFFFFF" Offset="0.5" />
+                <GradientStop Color="Transparent" Offset="1" />
+            </LinearGradientBrush>
+        </Grid.Background>
+    </Grid>
+</Page>

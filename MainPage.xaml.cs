@@ -1,6 +1,5 @@
 ﻿namespace AnimatedGradientBrush
 {
-
     public sealed partial class MainPage
     {
         public MainPage()

@@ -8,7 +8,7 @@
   <Identity
     Name="2df4d17f-04a3-4bad-8991-914faf1ec5c4"
     Publisher="CN=petterh"
-    Version="1.0.0.0" />
+    Version="1.0.0.1" />
 
   <mp:PhoneIdentity PhoneProductId="2df4d17f-04a3-4bad-8991-914faf1ec5c4" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
@@ -19,7 +19,7 @@
   </Properties>
 
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10240.0" MaxVersionTested="10.0.10586.0" />
   </Dependencies>
 
   <Resources>
